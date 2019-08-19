@@ -4,7 +4,7 @@ import os
 import glob
 
 extensions = ['mp3','pdf','mp4']
-root_dir = '/Users/kumbasar/github/filelistener/'
+root_dir = os.getcwd() # Current working directory
 
 for extension in extensions:
     with open("{}_file.txt".format(extension), "w", encoding = "utf-8") as file: 
